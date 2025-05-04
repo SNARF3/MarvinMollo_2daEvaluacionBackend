@@ -2,7 +2,6 @@ import express from 'express';
 import { port } from './config.js';
 import solicitudRoutes from './routes/solicitud.routes.js';
 import cuentasRoutes from './routes/cuentas.routes.js';
-import formularioRouter from './routes/formulario.routes.js';
 import cors from 'cors'; 
 import bodyParser from 'body-parser';
 import proyectosRouter from './routes/proyectos.routes.js';
@@ -108,7 +107,6 @@ app.use(express.urlencoded({ extended: true }));
 // Rutas principales
 app.use(solicitudRoutes);
 app.use(cuentasRoutes);
-app.use(formularioRouter);
 app.use(proyectosRouter);
 app.use(calendarioRouter);
 
