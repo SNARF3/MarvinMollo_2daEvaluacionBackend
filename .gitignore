@@ -1,6 +1,4 @@
 node_modules
 package-lock.json
 package.json
-pdfconfig/google-drive-credentials.json
-/middelewares/upload.js
-/pdfconfig/credentials.json
+pdf
