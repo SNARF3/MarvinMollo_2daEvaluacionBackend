@@ -104,13 +104,11 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Rutas principales
 app.use(solicitudRoutes);
 app.use(cuentasRoutes);
 app.use(proyectosRouter);
 app.use(calendarioRouter);
 
-// Endpoint de salud
 app.get('/health', (req, res) => {
   res.status(200).json({
     status: 'OK',
